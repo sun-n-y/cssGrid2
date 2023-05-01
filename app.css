@@ -9,11 +9,12 @@
   /* grid-template-rows: 100px 100px 100px; */
   /* grid-template-rows: 1fr 2fr 1fr 2fr; */
   /* grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; */
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 150px;
+  grid-template-rows: 100px 1fr 100px;
   grid-template-areas:
-    "a a c"
-    "b b c";
+    ". a a"
+    "b . c"
+    ". d d";
 }
 
 .box {
@@ -33,4 +34,10 @@
   font-size: 1.5rem;
   text-align: center;
   grid-area: c;
+}
+.box4 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  grid-area: d;
 }
