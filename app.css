@@ -9,21 +9,28 @@
   /* grid-template-rows: 100px 100px 100px; */
   /* grid-template-rows: 1fr 2fr 1fr 2fr; */
   /* grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; */
-  grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr [c4];
-  grid-template-rows: [r1] 1fr [r2] 1fr [r3] 1fr [r4];
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "a a c"
+    "b b c";
 }
 
 .box {
   color: white;
   font-size: 1.5rem;
   text-align: center;
-  grid-column: c2/c3;
-  grid-row: r3/r4;
+  grid-area: a;
 }
 .box2 {
   color: white;
   font-size: 1.5rem;
   text-align: center;
-  grid-column: c3/c4;
-  grid-row: r2/span 2;
+  grid-area: b;
+}
+.box3 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  grid-area: c;
 }
