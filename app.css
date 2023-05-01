@@ -1,15 +1,16 @@
 .container {
   height: 700px;
-  width: 700px;
+  width: 80%;
   margin: 200px auto;
   background-color: black;
   box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
   display: grid;
   /* grid-template-columns: 100px 1fr 2fr 100px; */
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr 2fr;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  /* grid-template-rows: 100px 100px 100px; */
+  /* grid-template-rows: 1fr 2fr 1fr 2fr; */
+  /* grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(100px, auto);
 }
 
 .box {
